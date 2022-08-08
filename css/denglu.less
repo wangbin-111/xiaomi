@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    // 清除所有超链接的下划线
+    a{
+        text-decoration: none;
+    }
+
+
+
+    body{
+        width: 1519px;
+    }
+    // 登陆界面
+
+// 语言
+#sanjiao::before{
+    content: "";
+    border: 6px solid ;
+    top: 30px;
+    position: absolute;
+    border-color: transparent  transparent rgb(113, 114, 114) transparent;
+    // border-color:rgb(113, 114, 114) transparent  transparent  transparent;
+    // transform: rotateZ(180deg);
+}
+#q:hover>#sanjiao::before{
+    content: "";
+    border: 6px solid ;
+    top: 38px;
+    position: absolute;
+    // border-color: transparent  transparent rgb(113, 114, 114) transparent;
+    border-color:#ff5c00 transparent  transparent  transparent;
+    transition: all .5s;
+
+}
+
+
+.langu{
+    display: none;
+    width: 80px;
+    height: 60px;
+    // background-color: #ff5c00;
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+    position: absolute;
+    top: 50px;
+    left: 1380px;
+    padding-top: 30px;
+    &>div{
+        font-size: 14px;
+        color: #636362;
+        text-align: center;
+        height: 50%;
+        &:hover{
+            cursor: pointer;
+            background-color: #dbdad8;
+        }
+    }
+}
+
+
+
+
+.zuo{
+    width: 375px;
+    height: 794px;
+}
+.contain{
+    width: 1130px;
+    float: right;
+    &>.head{
+        margin-top: 20px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &>ul:first-child{
+            margin: 20px;
+            width: 154px;
+            list-style: none;
+            img{
+                position: relative;
+                width: 40px;
+                top: 11px;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+            span{
+                font-weight: bold;
+                font-size: 20px;
+                
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+        &>ul:last-child{
+            margin: 20px;
+            width:352px ;
+            list-style: none;
+            float: right;
+            li{
+                color: rgb(113, 114, 114);
+                font-size: 13px;
+                float: left;
+                margin-right: 9px;
+                span{
+                    margin-left: 9px;
+                }
+                &:hover{
+                    color: #ff5c00;
+                }
+            }
+        }
+    }
+    .cen{
+        width: 1130px;
+        height: 764px;
+        .cencontain{
+            position: relative;
+            box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+            width: 360px;
+            // border: 1px solid;
+            height: 488px;
+            margin: 50px auto;
+            padding:40px 45px;
+            &>div:first-child{
+                width: 360px;
+                height: 41px;
+                &>div{
+                    transition: all 0.5s;
+                    color: #9e9a97;
+                    font-size: 20px;
+                    float: left;
+                    height: 41px;
+                    line-height: 41px;
+                    margin-right: 15px;
+                    font-weight: bold;
+                    // border-bottom: 2px solid red;
+                }
+                &>div:nth-of-type(1){
+                    border-bottom: 3px solid rgb(255, 90, 2);
+                    
+                    color: black;
+                    
+                }
+
+
+                &>div:last-child{
+                    // background-color: #ff5c00;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 0;
+                    right: -14px;
+                    // width: 64px;
+                    // height: 64px;
+                    box-sizing: border-box;
+                    border:40px  solid;
+                    border-color: #ff5c00  #ff5c00 transparent transparent ;
+                    opacity: 0.5;
+                }
+            }
+
+
+            // 登陆界面
+            .dengluForm{
+                // display: none;
+                // border: 1px solid;
+                width: 356px;
+                height: 315px;
+                padding: 20px 2px 0px 2px;
+                .shuru{
+                    box-sizing: border-box;
+                    padding: 30px 20px 10px 20px;
+                    background-color: rgb(249, 249, 249);
+                    input{
+                        border: 0;
+                        outline: none;
+                        background-color: rgb(249, 249, 249);
+                    }
+                }
+                &>div{
+                margin-bottom: 20px;
+                   
+                }
+                // 第三个子元素
+                &>div:nth-of-type(3){
+                    input{
+                        position: relative;
+                        top: 4px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span{
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        color:rgb(185, 179, 179) ;
+                        a{
+                            color: rgb(119, 111, 111);
+                        }
+                    }
+                }
+                // 第四个子元素
+                &>div:nth-of-type(4){
+                    input{
+                        color: white;
+                       width:100% ;
+                       height: 60px;
+                        background-color: rgb(255, 190, 153);
+                        // border: 1px solid rgb(255, 190, 153);
+                        border-radius: 5px;
+                        border: 0;
+                        &:hover{
+                            background-color: rgb(250, 170, 124);
+    
+                        }
+                    }
+                   
+                }
+                // 第五个子元素
+                &>div:nth-of-type(5){
+                   display: flex;
+                   justify-content: space-between;
+                   a{
+                    color: #ff5c00;
+                   }
+                   
+                }
+            }
+             // 其他登陆方式
+        &>.dengluFoot{
+            // display: none;
+            color:rgb(185, 179, 179) ;
+            width: 360px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 20px;
+            &>div{
+                img{
+                    width: 42px;
+                    border-radius: 50%;
+                    margin:10px;
+                }
+            }
+        }
+
+
+        // 注册界面
+        .zhuceForm{
+            display: none;
+            // border: 1px solid;
+            width: 356px;
+            height: 397px;
+            padding: 20px 2px 0px 2px;
+            .shuru{
+                box-sizing: border-box;
+                padding: 30px 20px 10px 20px;
+                background-color: rgb(249, 249, 249);
+                a{
+                    color: #ff5c00;
+                    margin-left: 30px;
+                }
+                &>.loc{
+                    position: absolute;
+                    top: 110px;
+                    font-size: 14px;
+                    color: #9e9a97;
+                }
+                .locS{
+                    position: absolute;
+                    border: none;
+                    background-color:rgb(249, 249, 249) ;
+                   right: 70px;
+                   color: rgb(97, 99, 99);
+                   outline: none;
+                }
+                .locCode{
+                    position: absolute;
+                    top: 190px;
+                    font-size: 14px;
+                    color: #9e9a97;
+                }
+                .locCodes{
+                    position: absolute;
+                    border: none;
+                    background-color:rgb(249, 249, 249) ;
+                   right: 300px;
+                   color: rgb(97, 99, 99);
+                   outline: none;
+                }
+
+                input{
+                    font-size: 16px;
+                    border: 0;
+                    outline: none;
+                    background-color: rgb(249, 249, 249);
+                }
+               
+            }
+            &>div{
+            margin-bottom: 20px;
+               
+            }
+            // 第三个子元素
+            &>div:nth-of-type(4){
+                input{
+                    position: relative;
+                    top: 4px;
+                    width: 20px;
+                    height: 20px;
+                }
+                span{
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color:rgb(185, 179, 179) ;
+                    a{
+                        color: rgb(119, 111, 111);
+                    }
+                }
+            }
+            // 第四个子元素
+            &>div:nth-of-type(5){
+                input{
+                    color: white;
+                   width:100% ;
+                   height: 60px;
+                    background-color: rgb(255, 190, 153);
+                    // border: 1px solid rgb(255, 190, 153);
+                    border-radius: 5px;
+                    border: 0;
+                    &:hover{
+                        background-color: rgb(250, 170, 124);
+
+                    }
+                }
+               
+            }
+            // 第五个子元素
+            &>div:nth-of-type(6){
+            //    display: flex;
+            //    justify-content: space-between;
+               a{
+                color: #ff5c00;
+               }
+               
+            }
+
+            // 
+            // 国家码
+            &>div:nth-of-type(2)>input:nth-of-type(1){
+                color: #9e9a97;
+                width: 120px;
+                &:hover{
+                    cursor: no-drop;
+                }
+            }
+        }
+         // 其他登陆方式
+    &>.zhuceFoot{
+        display: none;
+        color:rgb(185, 179, 179) ;
+        width: 360px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 20px;
+        &>div{
+            img{
+                width: 42px;
+                border-radius: 50%;
+                margin:10px;
+            }
+        }
+    }
+
+        }
+
+       
+    }
+}

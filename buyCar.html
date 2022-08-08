@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/buyCar.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="headCon">
+            <div class="head">
+                <div class="headCent">
+                    <div class="zuo">
+                        <div> <img src="./fa/mi.png" alt=""></div>
+                        <div> <span class="big">我的购物车</span>
+                            <span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+                        </div>
+                    </div>
+                    <div class="you">
+                        <span> <a href="./denglu.html?a=1">登录</a></span>
+                        <span>|</span>
+                        <span><a href="./denglu.html?a=2">注册</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="bodyCon">
+                <table cellspacing="0">
+                    <tr>
+                        <td><input type="checkbox" id="quanxuan" onclick="fun1()"><span>全选</span></td>
+                        <td></td>
+                        <td>商品名称</td>
+                        <td>单价</td>
+                        <td>数量</td>
+                        <td>小计</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check" onclick="fun(0)"></td>
+                        <td><img src="./fa/gouwuche1.png" alt=""></td>
+                        <td>Xiaomi 12S Ultra 8GB+256GB 经典黑</td>
+                        </td>
+                        <td>5999元</td>
+                        <td>
+                            <div><input type="button" name="jian" value="-"><input readonly type="text" name="count" value="1"><input  name="jia"type="button"
+                                    id="" value="+"></div>
+                        </td>
+                        <td name="monery">5999元</td>
+                        <td><input type="button" id="" value="×" name="remove"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check" onclick="fun(1)"></td>
+                        <td><img src="./fa/gouwuche1.png" alt=""></td>
+                        <td>Xiaomi 12S Ultra 8GB+256GB 经典黑</td>
+                        </td>
+                        <td>5999元</td>
+                        <td>
+                            <div><input type="button" name="jian" value="-"><input readonly type="text" name="count"  value="1"><input name="jia" type="button"
+                                    id="" value="+"></div>
+                        </td>
+                        <td name="monery">5999元</td>
+                        <td><input type="button" id="" value="×" name="remove"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check" onclick="fun(2)"></td>
+                        <td><img src="./fa/gouwuche1.png" alt=""></td>
+                        <td>Xiaomi 12S Ultra 8GB+256GB 经典黑</td>
+                        </td>
+                        <td>5999元</td>
+                        <td>
+                            <div><input type="button" name="jian" value="-"><input readonly type="text" name="count"  value="1"><input name="jia" type="button"
+                                    id="" value="+"></div>
+                        </td>
+                        <td name="monery">5999元</td>
+                        <td><input type="button" id="" value="×" name="remove"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="foot">
+                <div class="footer">
+                    <div class="footLeft">
+                        <span><a href="" style="text-decoration: none; color: rgb(175, 169, 169);">继续购物</a></span>
+                        <span style="color: rgb(175, 169, 169);">|</span>
+                        <span style="color: rgb(175, 169, 169);">已选择<span style="color: coral;" id="Buycount">0</span>件</span>
+                    </div>
+                    <div class="footRight">
+                        <span style="color: coral;">合计：<span style="font-size: 30px;" id="allmonery">0</span>元</span>
+                        <button>去结算</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./js/buyCar.js"></script>
+    <script>
+         var btn1=document.getElementsByTagName("button")[0]
+        btn1.onclick=function(){
+            window.location.href="./pay.html"
+        }
+    </script>
+</body>
+
+</html>

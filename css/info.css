@@ -1,0 +1,545 @@
+body{
+    /* 设置body的最小宽度 */
+    min-width: 1226px;
+}
+.head{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(51,51,51);
+}
+.headcontent{
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.headcontent a{
+    display: inline-block;
+}
+/* 若把伪元素::after设置到下载aap后，
+    要使它hover时出现，则为app:hover::after 而不是 app:hover  .sanjiao::after
+*/
+.app a:hover > .appxia {
+    display: block;
+
+}
+.appxia::before{
+    position: absolute;
+    top: -8px;
+    right: 44px;
+}
+.appxia::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px  solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+    border-top: none;
+}
+.appxia{
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    background-color: rgb(255, 253, 253);
+    box-shadow: 0 0 2px  rgb(0, 0, 0,.3);
+    z-index: 999;
+    top: 40px;
+    right: -20px;
+    display: none;
+}
+.zuo{
+    float: left;
+    
+}
+.app {
+    position: relative;
+}
+.zuo li{
+    /* position: relative; */
+    float: left;
+    margin-left: 5px;
+}
+li span{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #424242;
+}
+.you{
+    float: right;
+    
+}
+.you li{
+    float: left;
+    margin-left: 5px;
+}
+.headcontent a{
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 12px;
+}
+a:hover{
+    color: white;
+}
+.xia {
+    background-color: rgb(66,66,66);
+    display: block;
+    height: 40px;
+    width: 120px;
+    position: relative;
+    text-align: center;
+    z-index: 99999;
+}
+.xia span{
+    display: block;
+    margin-top: 30px;
+}
+.xia a{
+    display: block;
+    
+}
+.xia a:hover{
+    color: rgb(192, 71, 23);
+}
+.xia:hover{
+    background-color: rgb(255, 255, 255);
+}
+    .xia i{
+        margin-right: 7px;
+    }
+
+.xia:hover  .xialakuang{
+    /* display: block; */
+    height: 100px;
+}
+.xialakuang{
+    width: 250px;
+    /* height: 100px; */
+      /* display: none; */
+      /*  若要为下拉框添加样式，则不适用display:none;
+            应该把高度设为0 ，然后使用overflow:hidden;裁剪溢出部分
+            然后再hov效果处，设置高度，再给下拉框使用transition设置过渡效果
+      */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 155px;
+    box-shadow: 0 1px 4px  rgb(214, 211, 211,.3);
+    top: 40px;
+    right: -1px;
+    z-index: 999;
+
+}
+    .diercontent{
+        /* border: 1px solid; */
+        position: relative;
+        height: 100px;
+        width: 1226px;
+        margin: 0 auto;
+        /* background-color: aqua; */
+       
+        
+    }
+    .logo{
+        /* float: left; */
+       width: 55px;
+       height: 55px;
+       margin-top: 22px;
+       /* 裁剪溢出图片 */
+       overflow: hidden;
+       position: relative;
+       top: 0px;
+    }
+   
+    .logo a{
+        border-radius: 20px;
+        width: 55px;
+        height: 55px;
+        /* background-color: aquamarine; */
+        position: absolute;
+        top: 0px;
+        background-image: url(../fa/mi.png);
+        background-size: 55px 55px;
+        background-position: center;
+        /* 要是有transition 则left要有固定值 */
+        left: 0px;
+        transition: left 0.1s;
+    }
+    /* .logo .fangzi{
+        background-image: url(../fa/fangzi.jpg);
+        left: -55px;
+    } */
+    /* 设置鼠标移入mi的位置 */
+    .logo:hover .mi{
+        left: 1px;
+    }
+    .all{
+        width: 120px;
+        margin-left: 50px;
+    }
+    .dierzhong {
+        position: absolute;
+        top: -20px;
+        /* background-color: tomato; */
+       width: 850px;
+       padding-right: 40px;
+       line-height: 100px;
+    }
+    .nav{
+        
+        margin-left: 30px;
+    }
+    .nav > li{
+        float: left;
+       
+    }
+    .dierzhong a{
+        padding-left: 20px;
+        display: block;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+    }
+    .dierzhong .a:hover{
+        color: #ffffff;
+    }
+    .dierzhong a:hover{
+        color:rgb(255, 103, 0);
+    }
+    .dierzhong .all{
+        position: relative;
+       
+        /* visibility: hidden; */
+    }
+    .all ul{
+        visibility: visible;
+        
+    }
+    /* 显示列表 */
+    .all>a:hover+.list,.list:hover{
+        display: block;
+    }
+
+/*  */
+#xiangqing{
+    position: relative;
+    width: 1020px;
+    height: 0px;
+    margin-left: 123px;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0,.3);
+    z-index: 3;
+}
+#xiangqing>img{
+    width:1020px ;
+    height: 460px;
+    z-index: 2;
+}
+
+    .all ul{
+        display: none;
+        top: 100px;
+        right:-4px;
+        position: absolute;
+        z-index: 999;
+    }
+    .all{
+        height: 100px;
+        width: 120px;
+    }
+    .all ul{
+      padding: 20px 0 ;
+      width: 230px;
+      height: 420px;
+      background-color: rgba(255, 255, 255);
+      border: #ff6700 1px solid;
+    }
+    .all li{
+        padding: 0 20px;
+        height:42px ;
+        line-height: 42px;
+    }
+    .all li:hover{
+        background-color:rgb(255, 103, 0);
+    }
+    .all ul a{
+        text-decoration: none;
+        /* color: white; */
+    }
+    .xia2{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 144px;
+        right: 0;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.3s;
+        z-index: 999;
+        box-shadow: 0 5px 8px rgba(224,224, 224, .4);
+        /* border-top: 1px solid; */
+        /* padding: 0 100px; */
+    }
+
+    .xia2>img{
+        display: block;
+        width: 1224px;
+        margin: 0 auto;
+        height: 200px;
+    }
+    .yinqing{
+        position: absolute;
+        top: -20px;
+        width: 296px;
+        height: 50px;
+        margin-top: 25px;
+        left: 930px;
+    }
+    .yinqing2{
+        width: 296px;
+        height: 50px;
+    }
+    .yinqing-imp{
+        /* 指定盒子是整个大小 不会挤下去另一个 */
+        box-sizing: border-box;
+        float: left;
+        height: 50px;
+        width: 244px;
+        margin: 0;
+        padding:0 10px;
+        border: none;
+        border: 1px solid rgb(224, 224, 224);
+        border-right: 0;
+       /* 取消原本的轮廓线 */
+       outline: none;
+    }
+    .yinqing button{
+        padding: 0;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        /* 取消边框 */
+        border: none;
+        width: 52px;
+        border: 1px solid rgb(224, 224, 224);
+        background-color: white;
+       
+    }
+    .yinqing i{
+        font-size: 18px;
+        color: rgb(160, 156, 156);
+    }
+    
+    .yinqing a{
+        display: inline-block;
+        width: 52px;
+        height: 51px;
+    }
+    /* 给button设置hover效果并且i也会变色 */
+    .yinqing button:hover,
+    .yinqing button:hover i{
+        background-color: #ff6700;
+        color: white;
+        border: 0;
+    }
+    /* focus获取焦点  给搜索框加轮廓线 选中imp的第一个兄弟元素 */
+    .yinqing-imp:focus,
+    .yinqing-imp:focus+button
+    {
+        border: 1px solid #ff6600a8;
+    }
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 460px;
+   
+}
+
+
+/* 设置 搜索下面的一小块*/
+.xuanfuBox{
+    top: 143px;
+    position: absolute;
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgb(187, 182, 182);
+}
+.xuanfu{
+    width:1226px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Xleft>span{
+    font-size: 18px;
+    line-height: 20px;
+}
+.Xleft>span:not(:first-child){
+    font-size: 12px;
+}
+.Xleft>a{
+    color: rgb(102, 99, 99);
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+}
+.Xright>a{
+    font-size: 16px;
+    color: rgb(71, 69, 69);
+    text-decoration: none;
+
+}
+.Xright>span{
+    font-size: 12px;
+    color: rgb(102, 99, 99);
+}
+/* 设置a整体效果 */
+.xuanfu a:hover{
+    color: #ff6700;
+}
+
+.fotttttt{
+    top:240px;
+    position: absolute;
+    width: 100%;
+    
+}
+.footCent{
+    width: 1226px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footlunbo{
+    text-align: center;
+    width: 560px;
+    height: 560px;
+}
+.footlunbo img{
+    margin-top: 30px;
+    width: 520px;
+    height: 520px;
+    transition: all .3s;
+}
+.xiaodiandian{
+    position: relative;
+    background-color: #ff6700;
+    margin-left: 180px;
+    margin-top: -20px;
+    z-index: 333;
+
+}
+.xiaodiandian>li{
+    width: 60px;
+    height: 2px;
+    background-color: #bebcbc;
+    float: left;
+    margin-left: 5px;
+}
+.xiaodiandian>li:hover{
+    background-color: grey;
+}
+.footInfo{
+    width:600px;
+    /* background-color: #424242; */
+}
+.footInfo .loc{
+    width: 498px;
+    height: 42px;
+    padding: 30px 50px;
+    background-color: #faf9f9;
+    border: 1px solid rgb(236, 231, 231);
+    margin: 20px 0;
+}
+
+/* 版本 */
+.banben,.col{
+    width: 600px;
+    height: 108px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.col{
+    height: 50px;
+}
+.banben>div{
+    text-align: center;
+    width: 282px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 5px;
+}
+/* 除了最后一个占位置 不加边框 */
+.banben>div:not(:last-child){
+    border: 1px solid gainsboro;
+}
+.banben>div:first-child,.col>div:first-child{
+    border: 1px solid coral;
+}
+.col>div{
+    text-align: center;
+    width: 282px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 5px;
+    border: 1px solid gainsboro;
+}
+.zongji{
+    width: 498px;
+    height: 86px;
+    padding: 30px ;
+    background-color: #faf9f9;
+    border: 1px solid rgb(236, 231, 231);
+    margin: 20px 0;
+}
+.yangshi{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.monery{
+    height: 56px;
+    padding-top: 20px;
+}
+
+/* 调整布局 */
+.footInfo>div>h1{
+    margin-bottom: 20px;
+}
+.footInfo>div>p{
+    margin: 20px 0;
+}
+
+.add>button:first-child{
+    width: 298px;
+    height: 54px;
+    background-color: rgb(255, 103, 0);
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all .5s;
+}
+.add>button:first-child:hover{
+    background-color: rgb(242, 88, 7);
+    transition: all .5s;
+
+}
+.add>button:last-child:hover{
+    background-color: rgb(117, 117, 117);
+    transition: all .5s;
+
+}
+.add>button:last-child{
+    width: 140px;
+    height: 54px;
+    background-color: rgb(176, 176, 176);
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all .5s;
+}

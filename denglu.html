@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title></title>
+    <link rel="stylesheet" href="./css/denglu.css">
+    <link rel="icon" href="./favicon.ico">
+
+    
+</head>
+<body>
+    <img class="zuo" id="zuo" src="./fa/banner.5b1efcd8.jpg" alt="">
+
+    <!-- 右侧登陆界面 -->
+    <div class="contain">
+        <!-- 头部 -->
+        <div class="head">
+            <!-- 左侧 -->
+            <ul><li><img src="./fa/mi.png" alt=""><span>小米账号</span></li></ul>
+            <!-- 右侧 -->
+            <ul>
+                <li><span>用户协议</span></li>
+                <li><span>隐私政策</span></li>
+                <li><span>帮助中心</span><span>|</span></li>
+                <li id="q"><span>中文(简体)</span><span id="sanjiao"></span>
+                
+                </li>
+                
+            </ul>
+        </div>
+        <div class="langu" id="langu">
+            <div>中文(繁体)</div>
+            <div>English</div>
+        </div>
+        <div class="cen">
+           <div class="cencontain" id="cencontain">
+            <div>
+                <div id="btn1">登录</div>
+                <div id="btn2">注册</div>
+                <div></div>
+            </div>
+
+            <!-- 登录 -->
+            <form class="dengluForm" id="dengluForm" action="">
+                <div class="shuru"><input type="text" placeholder="邮箱/手机号码/小米ID"></div>
+                <div class="shuru"><input type="password" placeholder="密码"></div>
+                <div><input type="checkbox"/><span>已阅读并同意小米账号<a href="">用户协议</a>和<a href="">隐私政策</a></span></div>
+                <div><input type="button" value="登录"></div>
+                <div><a href="">忘记密码？</a> <a href="">手机号登录</a></div>
+
+
+            </form>
+            <div class="dengluFoot" id="dengluFoot">
+
+                <div>其他方式登录</div>
+
+                <div>
+                    <a href=""><img src="./fa/zhi.png" alt=""></a>
+                    <a href=""><img src="./fa/wei.png" alt=""></a>
+                    <a href=""><img src="./fa/qq.png" alt=""></a>
+                    <a href=""><img src="./fa/weibo.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- 注册  -->
+            <form class="zhuceForm" id="zhuceForm" action="">
+                <div class="shuru"><span class="loc">国家/地区</span><input type="text" value="中国"><select class="locS" name="" id=""></select></div>
+                <div class="shuru"><span class="locCode">国家码</span><input readonly type="text" value="+86"><select class="locCodes" name="" id=""></select><input type="text" placeholder="手机号"></div>
+                <div class="shuru"><input type="text" placeholder="请输入验证码"><a href="">获取验证码</a></div>
+                <div><input type="checkbox"/><span>已阅读并同意小米账号<a href="">用户协议</a>和<a href="">隐私政策</a></span></div>
+                <div><input type="button" value="登录"></div>
+                <div><a href="">收不到验证码？</a></div>
+
+
+            </form>
+            <div class="zhuceFoot" id="zhuceFoot">
+
+                <div>其他方式登录</div>
+
+                <div>
+                    <a href=""><img src="./fa/zhi.png" alt=""></a>
+                    <a href=""><img src="./fa/wei.png" alt=""></a>
+                    <a href=""><img src="./fa/qq.png" alt=""></a>
+                    <a href=""><img src="./fa/weibo.png" alt=""></a>
+                </div>
+            </div>
+
+
+           </div>
+        </div>
+        </div>
+
+    </div>
+    <script src="./js/dengluzhuce.js"></script>
+</body>
+</html>
